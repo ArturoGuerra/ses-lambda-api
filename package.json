@@ -1,0 +1,31 @@
+{
+  "name": "arturonet-ses",
+  "version": "1.0.0",
+  "description": "Arturonet ses email api",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "serverless:production": "serverless deploy",
+    "serverless:dev": "serverless deploy --stage dev",
+    "serverless:remove": "serverless remove",
+    "serverless:createdomain": "serverless create_domain",
+    "serverless:deletedomain": "serverless delete_domain"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.239.1",
+    "aws-serverless-express": "^3.2.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "dynamodb": "^1.1.1",
+    "express": "^4.16.3",
+    "hat": "0.0.3",
+    "joi": "^13.3.0",
+    "morgan": "^1.9.0",
+    "serverless": "^1.27.2",
+    "serverless-domain-manager": "^2.3.6"
+  }
+}
